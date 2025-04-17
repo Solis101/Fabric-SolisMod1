@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "solismod",
+	"version": "${version}",
+	"name": "SolisMod",
+	"description": "This is the first test mod by Solis ",
+	"authors": [
+		"Solis"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Solis101/Fabric-SolisMod1"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/solismod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.solis.solismod.SolisMod"
+		],
+		"fabric-datagen": [
+			"net.solis.solismod.SolisModDataGenerator"
+		],
+		"client": [
+			"net.solis.solismod.SolisModClient"
+		]
+	},
+	"mixins": [
+		"solismod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
